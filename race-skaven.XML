@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Skaven</name>
+		<description></description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/guildmasters-guide-ravnica">Guildmasters’ Guide to Ravnica</author>
+		<update version="0.0.3">
+			<file name="race-skaven.xml" url="" />
+		</update>
+	</info>
+    
+	<element name="Skaven" type="Race" source="Homebrew" id="ID_HMBRW_RACE_SKAVEN">
+		<description>
+			<p>Whether sniveling in fear, cackling with mad laughter, or snarling in a fury, skaven are wretched and inconsequential—at least in the eyes of most other folk. In their own minds, though, they are content to lurk in the shadows only until they fully come into their own and receive the recognition they believe they deserve. They are entitled to some credit for their tenacity, agility, crafty ingenuity, and dumb luck, all of which has enabled them to survive in a world overrun with creatures larger and more powerful than they are. They are cowardly but dasterdly, unforgiving, and relentless as well.</p>
+			<h4>SMALL AND FURY</h4>
+			<p>Standing around 3 feet tall and covered in dirty brown fur, Skaven have huge snouts and ears. Their wiry bodies are surprisingly strong. and their mouths are full of sharp, crooked teeth.</p>
+			<p class="indent">Most goblins have patchy fur and have their pale-pink skin showing through, either by heredity or by losing hair through burns, but a few boast shocks of white or black hair.  Many goblins prefer to go unshod to leave their feet and hands exposed for climbing and burrowing.</p>
+			<h4>UNFETTERED EMOTION</h4>
+			<p>Creatures of raw impulse and ambition, Skaven are found among guilds that value that quality. Many goblins are guildless and make their way as members of street gangs.</p>
+			<p class="indent">Sometimes driven by wild mood swings, Skaven have an inclination toward destruction, which can take a playful form but is often anything but. Some Skaven clobber things, others like to light them on fire, and many love to blow things up.</p>
+			<p class="indent">Skaven have an outrageous sense of humor, usually expressed through mischievous pranks. The malicious among them find pleasure in the misfortune of others and tend to cackle maniacally whenever they’re amused. They can act with apparent randomness, sometimes just to confuse and befuddle others.</p>
+			<h4>SKAVEN TRAITS</h4>
+			<p>Your Skaven character has the following racial traits.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Intellgience score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Goblins reach adulthood around age 8. They age noticeably faster than humans, and though few Skaven live to old age, the most cautious rarely live longer than 60 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Most of the Skaven are chaotic, with no inclination toward good or evil.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Skaven are between 4 and 5 feet tall and weigh between 40 and 80 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Natural Digging.</em></strong> You have a burrowing speed of 15 feet.</p>
+			<p class="indent"><strong><em>Underfoot.</em></strong> You can move through the space of any creature that is of a size larger than yours.</p>
+			<p class="indent"><strong><em>Nimble Escape.</em></strong> You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+			<p class="indent"><strong><em>Keen Smell.</em></strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<p class="indent"><strong><em>Born Coward.</em></strong> You have disadvantage on all saving throws to be frightened.</p>
+			<p class="indent"><strong><em>Sewer Rat.</em></strong> You have advantage on saving throws against poison, and you have resistance against poison damage.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Undercommon.</p>
+		</description>
+		<setters>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d4">3'5"</set>
+			<set name="weight" modifier="1">35 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="intelligence" value="1" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_UNDERCOMMON" />
+			<grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_NATURAL_DIGGING" />
+			<grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_UNDERFOOT" />
+			<grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_NIMBLE_ESCAPE" />
+			<grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_KEEN_SMELL" />
+			<grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_BORN_COWARD" />
+			<grant type="Racial Trait" id="ID_HMBRW_RACIAL_TRAIT_SEWER_RAT" />
+		</rules>
+	</element>
+	<element name="Natural Digging" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_NATURAL_DIGGING">
+		<description>
+			<p>You have a burrowing speed of 15 feet.</p>
+		</description>
+			<description>You have a burrowing speed of 15 feet.</description>
+		</sheet>
+	</element>
+	<element name="Underfoot" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_UNDERFOOT">
+		<description>
+			<p>You can move through the space of any creature that is of a size larger than yours.</p>
+		</description>
+		<sheet>
+			<description>You can move through the space of any creature that is of a size larger than yours.</description>
+		</sheet>
+	</element>
+	<element name="Nimble Escape" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_NIMBLE_ESCAPE">
+		<description>
+			<p>You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+		</description>
+		<sheet>
+			<description>You can take the Disengage or Hide action as a bonus action on each of your turns.</description>
+		</sheet>
+	</element>
+	<element name="Keen Smell" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_KEEN_SMELL">
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+	<element name="Born Coward" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_BORN_COWARD">
+		<description>
+			<p>You have disadvantage on all saving throws to be frightened.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on all saving throws to be frightened.</description>
+		</sheet>
+	</element>
+	<element name="Sewer Rat" type="Racial Trait" source="Homebrew" id="ID_HMBRW_RACIAL_TRAIT_SEWER_RAT">
+		<description>
+			<p>You have advantage on saving throws against poison, and you have resistance against poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against poison, and you have resistance against poison damage.</description>
+		</sheet>
+	</element>
+</elements>
